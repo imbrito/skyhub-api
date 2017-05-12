@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+Mongoid::Matchers::HaveFieldMatcher implements a legacy RSpec matcher
+protocol. For the current protocol you should expose the failure messages
+via the `failure_message` and `failure_message_when_negated` methods.
+(Used from /media/I5M43L/b2w/skyhub-api/spec/models/picture_spec.rb:5:in `block (2 levels) in <top (required)>')
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Mongoid::Matchers::HaveFieldMatcher implements a legacy RSpec matcher
+protocol. For the current protocol you should expose the failure messages
+via the `failure_message` and `failure_message_when_negated` methods.
+(Used from /media/I5M43L/b2w/skyhub-api/spec/models/picture_spec.rb:6:in `block (2 levels) in <top (required)>')
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Mongoid::Matchers::HaveFieldMatcher implements a legacy RSpec matcher
+protocol. For the current protocol you should expose the failure messages
+via the `failure_message` and `failure_message_when_negated` methods.
+(Used from /media/I5M43L/b2w/skyhub-api/spec/models/picture_spec.rb:7:in `block (2 levels) in <top (required)>')
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Mongoid::Matchers::HaveFieldMatcher implements a legacy RSpec matcher
+protocol. For the current protocol you should expose the failure messages
+via the `failure_message` and `failure_message_when_negated` methods.
+(Used from /media/I5M43L/b2w/skyhub-api/spec/models/picture_spec.rb:8:in `block (2 levels) in <top (required)>')
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Mongoid::Matchers::Associations::HaveAssociationMatcher implements a legacy RSpec matcher
+protocol. For the current protocol you should expose the failure messages
+via the `failure_message` and `failure_message_when_negated` methods.
+(Used from /media/I5M43L/b2w/skyhub-api/spec/models/picture_spec.rb:9:in `block (2 levels) in <top (required)>')
+--------------------------------------------------------------------------------
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.

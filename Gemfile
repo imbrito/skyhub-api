@@ -63,9 +63,6 @@ group :development, :test do
   # RSpec matches for Mongoid models, including association and validation matchers
   gem 'mongoid-rspec'
 
-  # factory_girl_rails provides integration between factory_girl and rails 3 (currently just automatic factory definition loading)
-  gem 'factory_girl_rails', '~> 4.8.0'
-
   # Minimalist validation matcher
   gem 'valid_attribute', '~> 2.0.0'
 

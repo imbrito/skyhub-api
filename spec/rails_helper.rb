@@ -42,16 +42,20 @@ RSpec.configure do |config|
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
+
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.include Mongoid::Matchers
 
+  # config.use_transactional_fixtures = true
   # Cleanup the DB in between test runs
   # http://blog.codelette.com/rails/ruby/2013/07/07/make-rspec-clean-up-mongoid-records.html
   # https://github.com/DatabaseCleaner/database_cleaner
   config.before(:suite) do
     DatabaseCleaner[:mongoid].strategy = :truncation
-    DatabaseCleaner[:mongoid].clean_with(:truncation)
+    DatabaseCleaner[:mongoid].start
   end
-  config.before(:each) { DatabaseCleaner.start }
-  config.after(:each) { DatabaseCleaner.clean }
+  # config.around(:suite) do
+  #  DatabaseCleaner[:mongoid].clean
+  # end
 end

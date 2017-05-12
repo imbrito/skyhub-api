@@ -1,24 +1,14 @@
-# README
+# Resize Photos – SkyHub Challenge
+Your mission:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
++ Consume a webservice endpoint `http://54.152.221.29/images.json` that returns a JSON of photos. There are 10 photos.
 
-Things you may want to cover:
++ Generate three different formats for each photo. The dimensions are: small (320x240), medium (384x288) and large (640x480).
 
-* Ruby version
++ Write a webservice endpoint that lists (in JSON format) all the ten photos with their respective formats, providing their URLs.
 
-* System dependencies
+You should use a non-relational database (MongoDB is preferred).
 
-* Configuration
+# Why use Rails?
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rails is a Ruby framework for web development. Rails provides an MVC (Model-View-Controller) architecture, and can be used for back-end and front-end development. Like Ruby, Rails also shares the gem repository (Rails is a gem), which increases your productivity.

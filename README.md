@@ -9,6 +9,10 @@ Your mission:
 
 You should use a non-relational database (MongoDB is preferred).
 
+# Required
+
+Run `bundle exec rake db:seed` before run `rails s`.
+
 # Why use Rails?
 
 Rails is a Ruby framework for web development. Rails provides an MVC (Model-View-Controller) architecture, and can be used for back-end and front-end development. Like Ruby, Rails also shares the gem repository (Rails is a gem), which increases your productivity.

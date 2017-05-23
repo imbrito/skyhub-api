@@ -12,8 +12,9 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+--color
+--format
 .byebug_history
 
 # Ignore development local envs
-/config/local_env.yml
+# /config/local_env.yml

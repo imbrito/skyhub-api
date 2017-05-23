@@ -1,0 +1,2 @@
+# Populate database
+Picture.populate

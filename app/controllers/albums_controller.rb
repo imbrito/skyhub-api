@@ -1,15 +1,9 @@
 class AlbumsController < ApplicationController
-  before_action :set_album, only: :index
 
   # GET /albums
   def index
-    @albums = Album.first
-    json_response(@albums)
+    @albums = Album.all
+    json_response(Picture.show_without_ids(@albums.first.to_json))
   end
 
-  private
-
-    def set_album
-      Picture.populate
-    end
 end

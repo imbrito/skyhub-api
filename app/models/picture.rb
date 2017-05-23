@@ -10,7 +10,6 @@ class Picture
     HTTParty.get('http://54.152.221.29/images.json').to_h
   end
 
-  # :url => "http://res.cloudinary.com/imbrito/image/upload/v1494597046/example.jpg"
   def self.populate
     response = Picture.client_webservice
     @album = Album.new
@@ -24,23 +23,25 @@ class Picture
     end
   end
 
-  # receive => "http://res.cloudinary.com/imbrito/image/upload/v1494597046/example.jpg"
-  # return => "example"
+  def self.show_without_ids(albums)
+    hash = JSON.parse(albums)
+    hash.delete('_id')
+    hash['pictures'].each { |picture| picture.delete('_id') }
+    return hash
+  end
+
   def self.named_picture(image)
     image['url'].split('/').pop.split('.').shift
   end
 
-  # :small => "http://res.cloudinary.com/imbrito/image/upload/c_scale,h_240,w_320/v1494597046/example.jpg"
   def self.resize_small(url,index)
     url.split('/').insert(index+1,"c_scale,h_240,w_320").join('/')
   end
 
-  # :medium => "http://res.cloudinary.com/imbrito/image/upload/c_scale,h_288,w_384/v1494597046/example.jpg"
   def self.resize_medium(url,index)
     url.split('/').insert(index+1,"c_scale,h_288,w_384").join('/')
   end
 
-  # :large => "http://res.cloudinary.com/imbrito/image/upload/c_scale,h_480,w_640/v1494597046/example.jpg"
   def self.resize_large(url,index)
     url.split('/').insert(index+1,"c_scale,h_480,w_640").join('/')
   end
